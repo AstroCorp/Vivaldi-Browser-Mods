@@ -51,22 +51,36 @@
         sidebar.insertBefore(sidebarIcon, sidebar.lastChild);
     }
 
+    function toggleSidebarIcon()
+    {
+        var sidebarIcon = document.getElementById('sidebarIcon');
+
+        if(document.getElementsByClassName('toolbar-statusbar')[0] !== undefined)
+        {
+            sidebarIcon.classList.remove('disabled-item');
+        }
+        else
+        {
+            sidebarIcon.classList.add('disabled-item');
+        }
+    }
+
     function initMod()
     {
         if(!document.getElementById('browser'))
         {
-            setTimeout(initMod, 300);
+            setTimeout(initMod, 250);
             return;
         }
 
         addSeparator();
-
-        if(document.getElementsByClassName('toolbar-statusbar')[0] !== undefined)
-        {
-            addSidebarIcon();
-        }
-
+        addSidebarIcon();
         moveSyncIcons();
+
+        setInterval(function()
+        {
+            toggleSidebarIcon();
+        }, 250);
     }
 
     initMod();

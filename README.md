@@ -1,6 +1,6 @@
 # Vivaldi Browser - Mods
 
-![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.1-brightgreen.svg)
+![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.2-brightgreen.svg)
 ![vivaldi-version](https://img.shields.io/badge/Vivaldi%20Version-2.5-brightgreen.svg)
 
 ## List of modifications
@@ -21,6 +21,10 @@
 > 3º Install modification (use install.bat).
 
 ## Changelogs
+
+### > 1.0.2 / 2019-04-01
+
+    - (Changed) Now the new button is synchronized with the status bar.
 
 ### > 1.0.1 / 2019-03-30
 
