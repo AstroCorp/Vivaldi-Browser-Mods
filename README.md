@@ -18,9 +18,13 @@
 >
 > 2º Select: Show Status Bar (in Status Bar section).
 >
-> 3º Install modification (use install.bat).
+> 3º Install modification (use install.bat for windows | use install.sh for linux (root)).
 
 ## Changelogs
+
+### > 1.0.3 / 2019-04-01
+
+    - (Added) Linux installer
 
 ### > 1.0.2 / 2019-04-01
 
