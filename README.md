@@ -1,8 +1,8 @@
 # Vivaldi Browser - Mods
 
-![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.4-brightgreen.svg)
-![vivaldi-version](https://img.shields.io/badge/Vivaldi%20Version-2.4-brightgreen.svg)
-![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5-brightgreen.svg)
+![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.5-brightgreen.svg)
+![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Version-2.4-brightgreen.svg)
+![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5-lightgrey.svg)
 
 ## List of modifications
 
@@ -22,6 +22,10 @@
 > 3º Install modification (use windows_install.bat for windows | use linux_install.sh for linux (root) | use mac_install.sh for Mac OS X (root)).
 
 ## Changelogs
+
+### > 1.0.5 / 2019-05-02
+
+    - (Changed) Linux installer translated to english
 
 ### > 1.0.4 / 2019-05-02
 
