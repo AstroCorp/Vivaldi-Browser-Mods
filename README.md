@@ -1,6 +1,6 @@
 # Vivaldi Browser - Mods
 
-![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.3-brightgreen.svg)
+![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.4-brightgreen.svg)
 ![vivaldi-version](https://img.shields.io/badge/Vivaldi%20Version-2.4-brightgreen.svg)
 ![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5-brightgreen.svg)
 
@@ -19,9 +19,13 @@
 >
 > 2º Select: Show Status Bar (in Status Bar section).
 >
-> 3º Install modification (use install.bat for windows | use install.sh for linux (root)).
+> 3º Install modification (use windows_install.bat for windows | use linux_install.sh for linux (root) | use mac_install.sh for Mac OS X (root)).
 
 ## Changelogs
+
+### > 1.0.4 / 2019-05-02
+
+    - (Added) Mac OS X installer
 
 ### > 1.0.3 / 2019-04-01
 
