@@ -1,8 +1,8 @@
 # Vivaldi Browser - Mods
 
 ![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.5-brightgreen.svg)
-![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5.1525.37-lightgrey.svg)
-![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5-lightgrey.svg)
+![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.4.1488.38-brightgreen.svg)
+![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.5.1525.37-lightgrey.svg)
 
 ## List of modifications
 
