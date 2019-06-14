@@ -47,7 +47,7 @@ cp "$dir/resources/vivaldi/browser.html" "$dir/resources/vivaldi/browser.html-$(
 
 alreadypatched=$(grep '<link rel="stylesheet" href="style/custom.css" />' $dir/resources/vivaldi/browser.html);
 if [ "$alreadypatched" = "" ] ; then
-    echo Patche browser.html
+    echo Patching browser.html
 	sed -i -e 's/<\/head>/<link rel="stylesheet" href="style\/custom.css" \/> <\/head>/' "$dir/resources/vivaldi/browser.html"
 	sed -i -e 's/<\/body>/<script src="custom.js"><\/script> <\/body>/' "$dir/resources/vivaldi/browser.html"
 else
@@ -55,15 +55,15 @@ else
 fi
 
 if [ -f "$mod_dir/custom.css" ] ; then	
-    echo Kopiere custom.css
+    echo Copying custom.css
     cp -f "$mod_dir/custom.css" "$dir/resources/vivaldi/style/custom.css"
 else 
-    echo custom.css fehlt in $mod_dir
+    echo custom.css is missing in $mod_dir
 fi
 
 if [ -f "$mod_dir/custom.js" ] ; then	
-    echo Kopiere custom.js
+    echo Copying custom.js
     cp -f "$mod_dir/custom.js" "$dir/resources/vivaldi/custom.js"
 else 
-    echo custom.js fehlt in $mod_dir!
+    echo custom.js is missing in $mod_dir!
 fi
