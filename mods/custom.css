@@ -6,3 +6,7 @@
 .disabled-item {
     display: none;
 }
+
+#browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
+    height: 30px;
+}

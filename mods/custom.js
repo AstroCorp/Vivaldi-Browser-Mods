@@ -97,7 +97,8 @@
         var header = document.getElementById('header');
         var main = document.getElementById('main');
 
-        var menu = document.querySelector('.vivaldi');
+        var menu = document.getElementsByClassName('vivaldi')[0];
+
         menu.style.backgroundColor = '#ececec';
         menu.style.boxShadow = 'inset -1px 0 var(--colorBorder)';
 
@@ -150,9 +151,16 @@
         document.getElementById('tabs-container').style.paddingLeft = '0px';
     }
 
+    function fixNormalPaddingTabs()
+    {
+        var tabs = document.getElementById('tabs-container');
+
+        tabs.style.paddingTop = '0px';
+    }
+
     function initMod()
     {
-        if(!document.getElementById('browser'))
+        if(!document.querySelector('.vivaldi'))
         {
             setTimeout(initMod, 250);
             return;
@@ -167,6 +175,7 @@
 
         setInterval(function()
         {
+            fixNormalPaddingTabs();
             toggleSidebarIcon();
         }, 250);
     }
