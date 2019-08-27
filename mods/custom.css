@@ -7,6 +7,23 @@
     display: none;
 }
 
+/*
 #browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
     height: 30px;
+}
+*/
+
+.startpage {
+    display: none;
+}
+
+#welcome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+#welcome .welcome-text {
+    text-align: center;
 }

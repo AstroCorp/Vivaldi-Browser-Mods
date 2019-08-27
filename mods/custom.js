@@ -158,6 +158,41 @@
         tabs.style.paddingTop = '0px';
     }
 
+    function welcomePage()
+    {
+        var startPage = document.querySelector('.startpage');
+
+        if(document.getElementById('welcome'))
+        {
+            if(!startPage)
+            {
+                document.getElementById('welcome').remove();
+            }
+
+            return;
+        }
+
+        var welcomePage = document.createElement('DIV');
+
+        welcomePage.id = 'welcome';
+
+        welcomePage.innerHTML = `
+            <div class='welcome-text'>
+                <h1>¡Hola Alejandro!</h1>
+                <h4>Te deseamos un buen día</h4>
+                <button class='btn-closeWelcome'>Ver accesos directos</button>
+            </div>
+        `;
+
+        startPage.parentNode.appendChild(welcomePage);
+
+        document.querySelector('.btn-closeWelcome').addEventListener('click', function() 
+        {
+            document.getElementById('welcome').style.display = 'none';
+            document.querySelector('.startpage').style.display = 'flex';
+        });
+    }
+
     function initMod()
     {
         if(!document.querySelector('.vivaldi'))
@@ -170,14 +205,15 @@
         addSidebarIcon();
         moveSyncIcons();
 
-        moveSidebar();
-        toggleSidebarFix();
+        // moveSidebar();
+        // toggleSidebarFix();
 
         setInterval(function()
         {
-            fixNormalPaddingTabs();
+            // fixNormalPaddingTabs();
             toggleSidebarIcon();
-        }, 250);
+            welcomePage();
+        }, 25);
     }
 
     initMod();
