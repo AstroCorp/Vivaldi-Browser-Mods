@@ -1,11 +1,3 @@
-<style>
-.scroll {
-  overflow-y: scroll !important;
-  margin-top: -20px;
-  height: 500px;
-}
-</style>
-
 # Vivaldi Browser - Mods
 
 ![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.7-brightgreen.svg)
@@ -35,7 +27,7 @@
 
 ## Changelogs
 
-<div class='scroll'>
+<div style="overflow-y: scroll !important; margin-top: -20px; height: 500px;">
 
 ### > 1.0.7 / 2019-10-04
 
