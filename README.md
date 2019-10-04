@@ -1,3 +1,11 @@
+<style>
+.scroll {
+  overflow-y: scroll !important;
+  margin-top: -20px;
+  height: 500px;
+}
+</style>
+
 # Vivaldi Browser - Mods
 
 ![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.7-brightgreen.svg)
@@ -26,6 +34,8 @@
 [Go to Trello (spanish)](https://trello.com/b/epKD1wmQ/vivaldi-mods)
 
 ## Changelogs
+
+<div class='scroll'>
 
 ### > 1.0.7 / 2019-10-04
 
@@ -60,3 +70,4 @@
 
     - (Added) Sync icons in sidebar.
     - (Added) Toggle icon for the status bar is added in the sidebar.
+</div>
