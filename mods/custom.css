@@ -7,11 +7,9 @@
     display: none;
 }
 
-/*
-#browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
-    height: 30px;
+.sync-and-trash-container button {
+    fill: var(--colorFgFaded);
 }
-*/
 
 .startpage {
     display: none;

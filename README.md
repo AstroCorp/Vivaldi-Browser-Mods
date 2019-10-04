@@ -1,8 +1,8 @@
 # Vivaldi Browser - Mods
 
 ![latest-version](https://img.shields.io/badge/Latest%20Version-1.0.6-brightgreen.svg)
-![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Stable%20Version-2.6.1566.51-brightgreen.svg)
-![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.7.1628.21-lightgrey.svg)
+![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Stable%20Version-2.8.1664.40-brightgreen.svg)
+![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-2.9.1675.11-lightgrey.svg)
 
 ## List of modifications
 
@@ -11,7 +11,7 @@
 
 ## Preview
 
-![preview](./preview.gif)
+![preview](./preview_1.gif)
 
 ## Installation
 
@@ -26,6 +26,11 @@
 [Go to Trello (spanish)](https://trello.com/b/epKD1wmQ/vivaldi-mods)
 
 ## Changelogs
+
+### > 1.0.7 / 2019-10-04
+
+    - (Fixed) Trash and sync icons color (in vivaldi snapshot 2.9.1675.11)
+    - (Added) Welcome page Developing
 
 ### > 1.0.6 / 2019-06-14
 

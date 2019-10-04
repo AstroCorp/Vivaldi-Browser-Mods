@@ -86,78 +86,6 @@
         }
     }
 
-    function moveSidebar()
-    {
-        var sidebar = document.getElementById('panels-container');
-        var sidebarStatus = sidebar.classList.contains('switcher');
-        
-        var browser = document.getElementById('browser');
-        var toolbar = document.getElementsByClassName('toolbar-statusbar')[0];
-
-        var header = document.getElementById('header');
-        var main = document.getElementById('main');
-
-        var menu = document.getElementsByClassName('vivaldi')[0];
-
-        menu.style.backgroundColor = '#ececec';
-        menu.style.boxShadow = 'inset -1px 0 var(--colorBorder)';
-
-        menu.addEventListener('mouseover', function()
-        {
-            menu.style.backgroundColor = '#e1e1e1';
-        });
-
-        menu.addEventListener('mouseout', function()
-        {
-            menu.style.backgroundColor = '#ececec';
-        });
-
-        var browserContent = document.createElement('div');
-        browserContent.id = 'browserContent';
-        
-        if(sidebarStatus)
-        {
-            browserContent.style.paddingLeft = '0px';
-        }
-        else
-        {
-            browserContent.style.paddingLeft = '34px';
-        }
-
-        browserContent.style.height = '100%';
-        browserContent.style.width = '100%';
-
-        sidebar.style.height = '100%';
-        sidebar.style.position = 'absolute';
-
-        if(toolbar.classList.contains('disabled-item'))
-        {
-            main.style.height = 'calc(100% - 30px)';
-        }
-        else
-        {
-            main.style.height = 'calc(100% - 63px)';
-        }
-
-        browserContent.prepend(toolbar);
-        browserContent.prepend(main);
-        browserContent.prepend(header);
-        
-        browser.prepend(browserContent);
-        browser.prepend(sidebar);
-
-        document.getElementById('panels').prepend(menu);
-        document.getElementById('switch').style.marginTop = '32px';
-        document.getElementById('tabs-container').style.paddingLeft = '0px';
-    }
-
-    function fixNormalPaddingTabs()
-    {
-        var tabs = document.getElementById('tabs-container');
-
-        tabs.style.paddingTop = '0px';
-    }
-
     function welcomePage()
     {
         var startPage = document.querySelector('.startpage');
@@ -197,7 +125,7 @@
     {
         if(!document.querySelector('.vivaldi'))
         {
-            setTimeout(initMod, 250);
+            setTimeout(initMod, 200);
             return;
         }
 
@@ -205,15 +133,11 @@
         addSidebarIcon();
         moveSyncIcons();
 
-        // moveSidebar();
-        // toggleSidebarFix();
-
         setInterval(function()
         {
-            // fixNormalPaddingTabs();
             toggleSidebarIcon();
-            welcomePage();
-        }, 25);
+            // welcomePage();
+        }, 20);
     }
 
     initMod();
