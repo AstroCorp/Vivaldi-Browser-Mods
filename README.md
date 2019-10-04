@@ -27,8 +27,6 @@
 
 ## Changelogs
 
-<div style="overflow-y: scroll !important; margin-top: -20px; height: 500px;">
-
 ### > 1.0.7 / 2019-10-04
 
     - (Fixed) Trash and sync icons color (in vivaldi snapshot 2.9.1675.11)
@@ -62,4 +60,3 @@
 
     - (Added) Sync icons in sidebar.
     - (Added) Toggle icon for the status bar is added in the sidebar.
-</div>
