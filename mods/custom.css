@@ -11,19 +11,8 @@
     fill: var(--colorFgFaded);
 }
 
-/*
-.startpage {
-    display: none;
+.apps-chrome-icon svg {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 5px -2px 0 !important;
 }
-
-#welcome {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #FFF;
-}
-
-#welcome .welcome-text {
-    text-align: center;
-}
-*/
