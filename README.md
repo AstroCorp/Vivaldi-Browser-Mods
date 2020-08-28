@@ -4,11 +4,16 @@
 ![vivaldi-stable-version](https://img.shields.io/badge/Vivaldi%20Stable%20Version-3.2.1967.41-red.svg)
 ![vivaldi-snapshot-version](https://img.shields.io/badge/Vivaldi%20Snapshot%20Version-3.3.2022.6-lightgrey.svg)
 
-## List of modifications
+## Roadmap
+
+    1. Custom option in browser settings
+    2. Sessions Panel
+
+## Mods list
 
     - Sync icons in sidebar.
     - Toggle icon for the status bar is added in the sidebar.
-    - Link to chrome apps in speed dial header
+    - Link to chrome apps in speed dial header.
 
 ## Previews
 
