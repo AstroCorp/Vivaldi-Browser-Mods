@@ -18,24 +18,6 @@
         }
     }
 
-    function toggleSidebarFix()
-    {
-        document.getElementsByClassName('toolbar-statusbar')[0].firstChild.addEventListener('click', function() {
-            var sidebar = document.getElementById('panels-container');
-            var getStatus = sidebar.classList.contains('switcher');
-            var browserContent = document.getElementById('browserContent');
-
-            if(getStatus)
-            {
-                browserContent.style.paddingLeft = '0px';
-            }
-            else
-            {
-                browserContent.style.paddingLeft = '34px';
-            }
-        });
-    }
-
     function addSeparator()
     {
         var sidebar = document.getElementById('switch');
@@ -57,36 +39,36 @@
         sidebar.insertBefore(syncIcons, sidebar.lastChild);
     }
 
-    function addSidebarIcon()
+    function addToggleStatusBarIcon()
     {
         var sidebar = document.getElementById('switch');
-        var sidebarIcon = document.createElement('button');
+        var toggleStatusBarIcon = document.createElement('button');
 
-        sidebarIcon.setAttribute("id", "sidebarIcon");
-        sidebarIcon.style.margin = '0 0 -3px 0';
-        sidebarIcon.innerHTML = '<svg style="width: 17px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M32 10l-16-8-16 8 16 8 16-8zM16 4.655l10.689 5.345-10.689 5.345-10.689-5.345 10.689-5.345zM28.795 14.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398zM28.795 20.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398z"></path></symbol></svg>';
-        sidebarIcon.addEventListener('click', () => toggleToolbar(), false);
+        toggleStatusBarIcon.setAttribute("id", "toggleStatusBarIcon");
+        toggleStatusBarIcon.style.margin = '0 0 -3px 0';
+        toggleStatusBarIcon.innerHTML = '<svg style="width: 17px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M32 10l-16-8-16 8 16 8 16-8zM16 4.655l10.689 5.345-10.689 5.345-10.689-5.345 10.689-5.345zM28.795 14.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398zM28.795 20.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398z"></path></symbol></svg>';
+        toggleStatusBarIcon.addEventListener('click', () => toggleToolbar(), false);
 
         sidebar.lastChild.style.marginTop = 0;
 
-        sidebar.insertBefore(sidebarIcon, sidebar.lastChild);
+        sidebar.insertBefore(toggleStatusBarIcon, sidebar.lastChild);
     }
 
-    function toggleSidebarIcon()
+    function setToggleStatusBarIconStatus()
     {
-        var sidebarIcon = document.getElementById('sidebarIcon');
+        var toggleStatusBarIcon = document.getElementById('toggleStatusBarIcon');
 
         if(document.getElementsByClassName('toolbar-statusbar')[0] !== undefined)
         {
-            sidebarIcon.classList.remove('disabled-item');
+            toggleStatusBarIcon.classList.remove('disabled-item');
         }
         else
         {
-            sidebarIcon.classList.add('disabled-item');
+            toggleStatusBarIcon.classList.add('disabled-item');
         }
     }
 
-    function addLinkToChromeAppsInSpeedDial()
+    function addLinkToChromeAppsInSpeedDialHeader()
     {
         var speedDialLinks = document.querySelector(".startpage-navigation .startpage-navigation-group:nth-child(2)");
 
@@ -111,6 +93,13 @@
         speedDialLinks.appendChild(appsButton);
     }
 
+    function applySidebarMods()
+    {
+        addSeparator();
+        addToggleStatusBarIcon();
+        moveSyncIcons();
+    }
+
     function initMod()
     {
         if(!document.querySelector('.vivaldi'))
@@ -119,14 +108,12 @@
             return;
         }
 
-        addSeparator();
-        addSidebarIcon();
-        moveSyncIcons();
+        applySidebarMods();
 
         setInterval(function()
         {
-            toggleSidebarIcon();
-            addLinkToChromeAppsInSpeedDial();
+            setToggleStatusBarIconStatus();
+            addLinkToChromeAppsInSpeedDialHeader();
         }, 20);
     }
 
