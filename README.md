@@ -8,13 +8,10 @@
 
     - Sync icons in sidebar.
     - Toggle icon for the status bar is added in the sidebar.
-    - Link to chrome apps in speed dial header.
 
 ## Previews
 
 ![preview 1](./preview_1.gif)
-
-![preview 2](./preview_2.gif)
 
 ## Installation
 
