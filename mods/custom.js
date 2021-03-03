@@ -6,7 +6,7 @@
         var getStatus = toolbar.classList.contains('disabled-item');
         var main = document.getElementById('main');
 
-        if(getStatus)
+        if (getStatus)
         {
             toolbar.classList.remove('disabled-item');
             main.style.height = 'calc(100% - 63px)';
@@ -58,7 +58,7 @@
     {
         var toggleStatusBarIcon = document.getElementById('toggleStatusBarIcon');
 
-        if(document.getElementsByClassName('toolbar-statusbar')[0] !== undefined)
+        if (document.getElementsByClassName('toolbar-statusbar')[0] !== undefined)
         {
             toggleStatusBarIcon.classList.remove('disabled-item');
         }
@@ -77,7 +77,7 @@
 
     function initMod()
     {
-        if(!document.querySelector('.vivaldi'))
+        if (!document.querySelector('.vivaldi'))
         {
             setTimeout(initMod, 200);
             return;
