@@ -1,6 +1,6 @@
 .toolbar-statusbar {
     padding: 6px 0;
-    height: 32px;
+    height: 32px !important;
 }
 
 .disabled-item {
@@ -9,6 +9,11 @@
 
 .sync-and-trash-container button {
     fill: var(--colorFgFaded);
+}
+
+#toggleStatusBarIcon:focus {
+    color: var(--colorFgFaded) !important;
+    background-color: transparent !important;
 }
 
 .apps-chrome-icon svg {
